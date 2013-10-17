@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-17 15:38:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.dailylog.entity.User" table="t_usr_info" catalog="dailylog">
+        <id name="usrid" type="java.lang.Integer">
+            <column name="USRID" />
+            <generator class="identity" />
+        </id>
+        <version name="version" type="java.lang.Integer">
+            <column name="VERSION" />
+        </version>
+        <property name="usrname" type="string">
+            <column name="USRNAME" length="20" not-null="true" unique="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="64" not-null="true" />
+        </property>
+        <property name="nickname" type="string">
+            <column name="NICKNAME" length="50" not-null="true" />
+        </property>
+        <property name="gender" type="java.lang.Integer">
+            <column name="GENDER" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="100" unique="true" />
+        </property>
+        <property name="createdBy" type="int">
+            <column name="CREATED_BY" not-null="true" />
+        </property>
+        <property name="createdTime" type="timestamp">
+            <column name="CREATED_TIME" length="19" />
+        </property>
+        <property name="updatedBy" type="java.lang.Integer">
+            <column name="UPDATED_BY" />
+        </property>
+        <property name="updatedTime" type="timestamp">
+            <column name="UPDATED_TIME" length="19" />
+        </property>
+        <set name="logInfos" table="t_log_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USRID" not-null="true" />
+            </key>
+            <one-to-many class="com.dailylog.entity.LogInfo" />
+        </set>
+    </class>
+</hibernate-mapping>
