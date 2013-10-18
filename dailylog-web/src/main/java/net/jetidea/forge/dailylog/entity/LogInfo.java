@@ -1,4 +1,4 @@
-package com.dailylog.entity;
+package net.jetidea.forge.dailylog.entity;
 
 // Generated 2013-10-17 15:38:10 by Hibernate Tools 4.0.0
 
@@ -9,6 +9,7 @@ import java.util.Date;
  */
 public class LogInfo implements java.io.Serializable {
 
+	private static final long serialVersionUID = 6117605845154444077L;
 	private Long id;
 	private User user;
 	private String log;

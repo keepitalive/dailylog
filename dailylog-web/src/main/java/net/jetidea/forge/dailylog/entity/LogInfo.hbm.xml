@@ -3,12 +3,12 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2013-10-17 15:38:10 by Hibernate Tools 4.0.0 -->
 <hibernate-mapping>
-    <class name="com.dailylog.entity.LogInfo" table="t_log_info" catalog="dailylog">
+    <class name="net.jetidea.forge.dailylog.entity.LogInfo" table="t_log_info" catalog="dailylog">
         <id name="id" type="java.lang.Long">
             <column name="ID" />
             <generator class="identity" />
         </id>
-        <many-to-one name="user" class="com.dailylog.entity.User" fetch="select">
+        <many-to-one name="user" class="net.jetidea.forge.dailylog.entity.User" fetch="select">
             <column name="USRID" not-null="true" />
         </many-to-one>
         <property name="log" type="string">

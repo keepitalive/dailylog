@@ -1,13 +1,14 @@
-package com.dailylog.dao.impl;
+package net.jetidea.forge.dailylog.dao.impl;
 
 import java.util.List;
+
+import net.jetidea.forge.dailylog.dao.UserDao;
+import net.jetidea.forge.dailylog.entity.User;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
-import com.dailylog.dao.UserDao;
-import com.dailylog.entity.User;
 
 @Repository
 public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {

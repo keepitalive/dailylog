@@ -1,4 +1,4 @@
-package com.dailylog;
+package net.jetidea.forge.dailylog;
 
 public class GenericException extends Exception {
 

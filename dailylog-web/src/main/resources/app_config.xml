@@ -14,7 +14,7 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.dailylog" />
+	<context:component-scan base-package="net.jetidea.forge.dailylog" />
 
 
 	<bean id="sessionFactory"
@@ -59,7 +59,7 @@
 
 	<aop:config>
 		<aop:pointcut id="allServiceMethods"
-			expression="execution(* com.dailylog.manager.*.*(..))" />
+			expression="execution(* net.jetidea.forge.dailylog.manager.*.*(..))" />
 		<aop:advisor advice-ref="baseServiceAdvice"
 			pointcut-ref="allServiceMethods" />
 	</aop:config>

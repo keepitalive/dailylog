@@ -1,13 +1,14 @@
-package com.dailylog.manager.impl;
+package net.jetidea.forge.dailylog.manager.impl;
+
+import net.jetidea.forge.dailylog.GenericException;
+import net.jetidea.forge.dailylog.dao.UserDao;
+import net.jetidea.forge.dailylog.entity.User;
+import net.jetidea.forge.dailylog.manager.UserManager;
+import net.jetidea.forge.dailylog.utils.MD5;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dailylog.GenericException;
-import com.dailylog.dao.UserDao;
-import com.dailylog.entity.User;
-import com.dailylog.manager.UserManager;
-import com.dailylog.utils.MD5;
 
 @Service
 public class UserManagerImpl implements UserManager {

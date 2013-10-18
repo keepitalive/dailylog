@@ -1,4 +1,4 @@
-package com.dailylog.utils;
+package net.jetidea.forge.dailylog.utils;
 
 import java.io.InputStream;
 import java.util.HashMap;

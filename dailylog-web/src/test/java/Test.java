@@ -1,5 +1,5 @@
-import com.dailylog.GenericException;
-import com.dailylog.manager.UserManager;
+import net.jetidea.forge.dailylog.GenericException;
+import net.jetidea.forge.dailylog.manager.UserManager;
 
 public class Test {
 
@@ -7,6 +7,6 @@ public class Test {
 
 		UserManager mgr = AppContextHelper.getInstance().getBean(UserManager.class);
 
-		mgr.login("ee", "ÍÞ¹þ¹þ");
+		mgr.login("ed", "ÍÞ¹þ¹þ");
 	}
 }

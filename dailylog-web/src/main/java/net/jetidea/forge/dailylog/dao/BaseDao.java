@@ -1,4 +1,4 @@
-package com.dailylog.dao;
+package net.jetidea.forge.dailylog.dao;
 
 import org.hibernate.Session;
 

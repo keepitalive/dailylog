@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-	<table catalog="dailylog" name="t_log_info" class="com.dailylog.entity.LogInfo">
+	<table catalog="dailylog" name="t_log_info" class="net.jetidea.forge.dailylog.entity.LogInfo">
 		<column name="ID"></column>
 		<column name="USRID"></column>
 		<column name="LOG"></column>
@@ -10,7 +10,7 @@
 		<column name="COLOR_TAG"></column>
 		<column name="CREATED_TIME"></column>
 	</table>
-	<table catalog="dailylog" name="t_usr_info" class="com.dailylog.entity.User">
+	<table catalog="dailylog" name="t_usr_info" class="net.jetidea.forge.dailylog.entity.User">
 		<column name="USRID"></column>
 		<column name="USRNAME"></column>
 		<column name="PASSWORD"></column>

@@ -8,7 +8,7 @@
   <property name="hibernate.connection.url">jdbc:mysql://localhost/dailylog</property>
   <property name="hibernate.connection.username">root</property> -->
   <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
-  <mapping resource="com/dailylog/entity/LogInfo.hbm.xml"/>
-  <mapping resource="com/dailylog/entity/User.hbm.xml"/>
+  <mapping resource="net/jetidea/forge/dailylog/entity/LogInfo.hbm.xml"/>
+  <mapping resource="net/jetidea/forge/dailylog/entity/User.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

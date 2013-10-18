@@ -1,11 +1,12 @@
-package com.dailylog.dao.impl;
+package net.jetidea.forge.dailylog.dao.impl;
+
+import net.jetidea.forge.dailylog.dao.BaseDao;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.InvalidDataAccessResourceUsageException;
 import org.springframework.stereotype.Repository;
 
-import com.dailylog.dao.BaseDao;
 
 @Repository
 public abstract class BaseDaoImpl<T> implements BaseDao<T> {

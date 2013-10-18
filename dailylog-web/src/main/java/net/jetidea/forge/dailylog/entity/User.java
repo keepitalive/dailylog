@@ -1,4 +1,4 @@
-package com.dailylog.entity;
+package net.jetidea.forge.dailylog.entity;
 
 // Generated 2013-10-17 15:38:10 by Hibernate Tools 4.0.0
 
@@ -11,6 +11,7 @@ import java.util.Set;
  */
 public class User implements java.io.Serializable {
 
+	private static final long serialVersionUID = 7251057012753502918L;
 	private Integer usrid;
 	private Integer version;
 	private String usrname;
@@ -22,7 +23,7 @@ public class User implements java.io.Serializable {
 	private Date createdTime;
 	private Integer updatedBy;
 	private Date updatedTime;
-	private Set logInfos = new HashSet(0);
+	private Set<LogInfo> logInfos = new HashSet<LogInfo>(0);
 
 	public User() {
 	}
@@ -35,7 +36,7 @@ public class User implements java.io.Serializable {
 	}
 
 	public User(String usrname, String password, String nickname, Integer gender, String email, int createdBy,
-			Date createdTime, Integer updatedBy, Date updatedTime, Set logInfos) {
+			Date createdTime, Integer updatedBy, Date updatedTime, Set<LogInfo> logInfos) {
 		this.usrname = usrname;
 		this.password = password;
 		this.nickname = nickname;
@@ -136,11 +137,11 @@ public class User implements java.io.Serializable {
 		this.updatedTime = updatedTime;
 	}
 
-	public Set getLogInfos() {
+	public Set<LogInfo> getLogInfos() {
 		return this.logInfos;
 	}
 
-	public void setLogInfos(Set logInfos) {
+	public void setLogInfos(Set<LogInfo> logInfos) {
 		this.logInfos = logInfos;
 	}
 

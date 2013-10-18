@@ -1,4 +1,4 @@
-package com.dailylog.utils;
+package net.jetidea.forge.dailylog.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

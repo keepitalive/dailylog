@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2013-10-17 15:38:10 by Hibernate Tools 4.0.0 -->
 <hibernate-mapping>
-    <class name="com.dailylog.entity.User" table="t_usr_info" catalog="dailylog">
+    <class name="net.jetidea.forge.dailylog.entity.User" table="t_usr_info" catalog="dailylog">
         <id name="usrid" type="java.lang.Integer">
             <column name="USRID" />
             <generator class="identity" />
@@ -42,7 +42,7 @@
             <key>
                 <column name="USRID" not-null="true" />
             </key>
-            <one-to-many class="com.dailylog.entity.LogInfo" />
+            <one-to-many class="net.jetidea.forge.dailylog.entity.LogInfo" />
         </set>
     </class>
 </hibernate-mapping>
